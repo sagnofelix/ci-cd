@@ -6,7 +6,7 @@ node {
         checkout scm
     }
 
-    stage('Read package.json') {
+    stage('Set the build tag') {
         script {
             packageJson = readJSON file: 'package.json'
             env.APP_VERSION = packageJson.version
