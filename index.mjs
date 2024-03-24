@@ -12,7 +12,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  const user = new User("jean felix", "sagno")
+  const user = new User(1,"jean felix", "sagno")
   user.sayName()
   res.sendFile('./src/index.html', {root: __dirname});
 });

@@ -1,5 +1,6 @@
 export class User{
-    constructor(fname,lname) {
+    constructor(id, fname, lname) {
+        this.id=id
         this.fname = fname,
         this.lname = lname
     }
